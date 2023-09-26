@@ -1,0 +1,64 @@
+header {
+    background-color: #FC766A;
+}
+
+body {
+    background-color: #F1AC88;
+}
+
+.link:hover {
+    font-size: large;
+    color: aquamarine;
+}
+
+.link:visited {
+    color: chocolate;
+}
+
+#title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: 5em;
+}
+
+.link,
+#title {
+    display: inline-block;
+}
+
+.link {}
+
+.image {
+    width: 25em;
+}
+
+#description {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.review,
+.item,
+.menu,
+.data,
+.stuff {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.table {
+    margin: auto;
+    margin-top: 2em;
+    width: 35em;
+}
+
+.data {
+    text-align: center;
+    background-color: #783937;
+    color: white;
+}
+
+.stuff {
+    text-align: center;
+    background-color: #FC766A;
+    color: white;
+}
