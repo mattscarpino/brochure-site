@@ -4,20 +4,25 @@ header {
 
 body {
     background-color: #F1AC88;
+    margin: 0;
+}
+
+.link:visited {
+    color: rgb(87, 21, 123);
 }
 
 .link:hover {
     font-size: large;
-    color: aquamarine;
+    color: honeydew;
+    text-decoration: underline;
 }
 
-.link:visited {
-    color: chocolate;
-}
+
 
 #title {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-right: 5em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .link,
@@ -25,23 +30,75 @@ body {
     display: inline-block;
 }
 
-.link {}
+.link {
+    margin-left: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+.all-images {
+    display: inline-block;
+    padding: .5em;
+    margin: auto;
+    text-align: center;
+}
 
 .image {
-    width: 25em;
+    width: 22em;
+    height: 15em;
+    object-fit: cover;
 }
+
+#all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #description {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+    font-size: 1.1em;
+    padding: 1em;
 }
 
 .review,
 .item,
 .menu,
 .data,
-.stuff {
+.stuff,
+#review-title {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu,
+.item {
+    text-align: center;
+    list-style-type: none;
+}
+
+.menu {
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+.item {
+    font-size: 2em;
+}
+
+#review-title {
+    margin-top: 2em;
+    margin-left: 1em;
+}
+
+.review {
+    background-color: honeydew;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 1em;
+    padding: 1em;
 }
 
 
