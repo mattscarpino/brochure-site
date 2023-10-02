@@ -17,24 +17,10 @@ body {
     text-decoration: underline;
 }
 
-
-
-#title {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 1em;
-    margin-right: 1em;
+hr {
+    margin: 0;
 }
 
-.link,
-#title {
-    display: inline-block;
-}
-
-.link {
-    margin-left: 1em;
-    text-decoration: none;
-    color: black;
-}
 
 .all-images {
     display: inline-block;
@@ -44,8 +30,6 @@ body {
 }
 
 .image {
-    width: 22em;
-    height: 15em;
     object-fit: cover;
 }
 
@@ -60,7 +44,6 @@ body {
 #description {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    font-size: 1.1em;
     padding: 1em;
 }
 
@@ -73,20 +56,17 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.menu,
-.item {
+.menu {
     text-align: center;
     list-style-type: none;
 }
 
-.menu {
-    font-size: 3em;
-    text-decoration: underline;
+.item {
+    text-align: center;
+    list-style-type: none;
+    margin-right: 4%;
 }
 
-.item {
-    font-size: 2em;
-}
 
 #review-title {
     margin-top: 2em;
@@ -105,7 +85,6 @@ body {
 .table {
     margin: auto;
     margin-top: 2em;
-    width: 35em;
 }
 
 .data {
@@ -118,4 +97,96 @@ body {
     text-align: center;
     background-color: #FC766A;
     color: white;
+}
+
+@media (min-width: 565px) {
+    #title {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .link,
+    #title {
+        display: inline-block;
+    }
+
+    .link {
+        margin-left: 1em;
+        text-decoration: none;
+        color: black;
+    }
+
+    #description {
+        font-size: 1.1em;
+    }
+
+    .menu {
+        font-size: 3em;
+        text-decoration: underline;
+    }
+
+    .item {
+        font-size: 2em;
+    }
+
+    .image {
+        width: 22em;
+        height: 15em;
+    }
+
+    .table {
+        width: 35em;
+    }
+}
+
+@media (max-width: 564px) {
+    #title {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: .5em;
+        margin-right: .5em;
+        font-size: .9em;
+    }
+
+    hr {
+        margin: 0;
+    }
+
+    .link,
+    #title {
+        display: inline-block;
+    }
+
+    .link {
+        margin-left: .5em;
+        text-decoration: none;
+        color: black;
+        font-size: .7em;
+    }
+
+    .link:hover {
+        font-size: small;
+    }
+
+    #description {
+        font-size: .8em;
+    }
+
+    .menu {
+        font-size: 1.5em;
+        text-decoration: underline;
+    }
+
+    .item {
+        font-size: 1em;
+    }
+
+    .image {
+        width: 18em;
+        height: 12em;
+    }
+
+    .table {
+        width: 20em;
+    }
 }
