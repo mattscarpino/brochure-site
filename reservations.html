@@ -11,10 +11,12 @@
 <body>
     <header>
         <h1 id="title"><strong><em>Jack's Breakfast</em></strong></h1>
-        <a href="homepage.html" class="link">Home</a>
-        <a href="reservations.html" class="link">Reservations</a>
-        <a href="delivery.html" class="link">Delivery</a>
-        <a href="merchstore.html" class="link">Merch</a>
+        <div id="all-links">
+            <a href="homepage.html" class="link">Home</a>
+            <a href="reservations.html" class="link">Reservations</a>
+            <a href="delivery.html" class="link">Delivery</a>
+            <a href="merchstore.html" class="link">Merch</a>
+        </div>
     </header>
     <hr>
     <div>
@@ -25,45 +27,83 @@
             experience is seamless. Choose your preferred date and time, and we'll reserve your spot, guaranteeing you a
             delightful morning filled with scrumptious delights and warm hospitality. Join us at Jack's Breakfast and
             reserve your place today to savor the finest breakfast experience in town!</p>
-        <img class="image"
-            src="https://www.eatatjacks.com/wp-content/uploads/elementor/thumbs/Cedartown-qceo2515opsvdze1gz9qf04wuwb49eo06qf503j6fo.jpg"
-            alt="">
-        <img src="https://restaurant.eatapp.co/hubfs/WordPress-Table-Reservation-plugin-1000x562-1.webp" alt=""
-            class="image">
+
+        <div class="delivery-image">
+            <img src="https://restaurant.eatapp.co/hubfs/WordPress-Table-Reservation-plugin-1000x562-1.webp" alt=""
+                class="image">
+        </div>
+
         <h1 class="menu">Book a Reservation Today!</h1>
     </div>
-    <div>
+    <div class="container">
         <form action="submit">
-            <label for="fName" class="label">First Name:</label>
-            <input type="text" id="fName" placeholder="enter name" class="input">
 
-            <label for="lName" class="label">Last Name:</label>
-            <input type="text" id="lName" placeholder="enter name" class="input">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fName" class="label">First Name:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fName" placeholder="enter name" class="input">
+                </div>
+            </div>
 
-            <label for="email" class="label">Email:</label>
-            <input type="email" id="email" placeholder="enter email" class="input">
+            <div class="row">
+                <div class="col-25">
+                    <label for="lName" class="label">Last Name:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lName" placeholder="enter name" class="input">
+                </div>
+            </div>
 
-            <select name="day" id="day">
-                <option value="0">Monday</option>
-                <option value="1">Tuesday</option>
-                <option value="2">Wednesday</option>
-                <option value="3">Thursday</option>
-                <option value="4">Friday</option>
-                <option value="5">Saturday</option>
-                <option value="6">Sunday</option>
-            </select>
-            <select name="time" id="time">
-                <option value="0">7:00 am</option>
-                <option value="1">8:00 am</option>
-                <option value="2">9:00 am</option>
-                <option value="3">10:00 am</option>
-                <option value="4">11:00 am</option>
-                <option value="5">12:00 pm</option>
-                <option value="6">1:00 pm</option>
-                <option value="7">2:00 pm</option>
-                <option value="8">3:00 pm</option>
-            </select>
-            <input type="submit">
+            <div class="row">
+                <div class="col-25">
+                    <label for="email" class="label">Email:</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" placeholder="enter email" class="input">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="day">Day: </label>
+                </div>
+                <div class="col-75">
+                    <select name="day" id="day">
+                        <option value="0">Monday</option>
+                        <option value="1">Tuesday</option>
+                        <option value="2">Wednesday</option>
+                        <option value="3">Thursday</option>
+                        <option value="4">Friday</option>
+                        <option value="5">Saturday</option>
+                        <option value="6">Sunday</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="time">Time:</label>
+                </div>
+                <div class="col-75">
+                    <select name="time" id="time">
+                        <option value="0">7:00 am</option>
+                        <option value="1">8:00 am</option>
+                        <option value="2">9:00 am</option>
+                        <option value="3">10:00 am</option>
+                        <option value="4">11:00 am</option>
+                        <option value="5">12:00 pm</option>
+                        <option value="6">1:00 pm</option>
+                        <option value="7">2:00 pm</option>
+                        <option value="8">3:00 pm</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="submit">
+                <input type="submit">
+            </div>
 
 
         </form>
