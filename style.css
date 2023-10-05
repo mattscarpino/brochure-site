@@ -99,7 +99,7 @@ hr {
     color: white;
 }
 
-@media (min-width: 565px) {
+@media (min-width: 586px) {
     #title {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         margin-left: 1em;
@@ -107,7 +107,8 @@ hr {
     }
 
     .link,
-    #title {
+    #title,
+    #all-links {
         display: inline-block;
     }
 
@@ -140,11 +141,13 @@ hr {
     }
 }
 
-@media (max-width: 564px) {
+@media (max-width: 585px) {
     #title {
+        display: block;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        margin-left: .5em;
-        margin-right: .5em;
+        margin: auto;
+        padding-top: .5em;
+        text-align: center;
         font-size: .9em;
     }
 
@@ -152,13 +155,20 @@ hr {
         margin: 0;
     }
 
-    .link,
-    #title {
-        display: inline-block;
+    #all-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: .5em;
+        padding-bottom: .5em;
     }
 
     .link {
-        margin-left: .5em;
+
+        margin-left: 1em;
+        margin-right: 1em;
         text-decoration: none;
         color: black;
         font-size: .7em;
