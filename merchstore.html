@@ -5,38 +5,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Merch Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+
 </head>
 
-<body>
-    <header>
-        <h1 id="title"><strong><em>Jack's Breakfast</em></strong></h1>
-        <div id="all-links">
-            <a href="homepage.html" class="link">Home</a>
-            <a href="reservations.html" class="link">Reservations</a>
-            <a href="delivery.html" class="link">Delivery</a>
-            <a href="merchstore.html" class="link">Merch</a>
+<body class="body">
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #FC766A;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Jack's Breakfast</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item active"><a class="nav-link" href="homepage.html"><i class="bi bi-house"></i>
+                            Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservations.html"><i class="bi bi-card-text"></i>
+                            Reservations</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="delivery.html"><i class="bi bi-truck"></i> Order</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="merchstore.html"><i class="bi bi-cart"></i> Merch</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
-    <hr>
-    <div>
-        <p id="description">Welcome to Jack's Breakfast Merch Store, your source for breakfast-inspired apparel and
-            accessories that let
-            you carry the breakfast vibes wherever you go! Explore our curated collection of stylish and fun
-            merchandise, including T-shirts, mugs, aprons, and more, all designed to celebrate the joy of breakfast.
-            Show off your love for breakfast and Jack's with our unique designs, perfect for yourself or as gifts for
-            fellow breakfast enthusiasts. With easy online shopping, you can fill your cart with breakfast-inspired
-            goodies that add a touch of morning delight to your everyday life. Browse our store and start accessorizing
-            with a side of breakfast flair today!</p>
-        <h1 class="menu">Buy our Stuff!</h1>
-        <div class="delivery-image">
-            <img class="image"
-                src="https://displaycentre.co.uk/wp-content/uploads/2016/10/clothing-store-984396_1920.jpg" alt="">
+    </nav>
+
+    <!-- <h1 id="title"><strong><em>Jack's Breakfast</em></strong></h1>
+            <div id="all-links">
+                <a href="homepage.html" class="link">Home</a>
+                <a href="reservations.html" class="link">Reservations</a>
+                <a href="delivery.html" class="link">Delivery</a>
+                <a href="merchstore.html" class="link">Merch</a>
+            </div> -->
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p id="description">Welcome to Jack's Breakfast Merch Store, your source for breakfast-inspired apparel
+                    and
+                    accessories that let
+                    you carry the breakfast vibes wherever you go! Explore our curated collection of stylish and fun
+                    merchandise, including T-shirts, mugs, aprons, and more, all designed to celebrate the joy of
+                    breakfast.
+                    Show off your love for breakfast and Jack's with our unique designs, perfect for yourself or as
+                    gifts for
+                    fellow breakfast enthusiasts. With easy online shopping, you can fill your cart with
+                    breakfast-inspired
+                    goodies that add a touch of morning delight to your everyday life. Browse our store and start
+                    accessorizing
+                    with a side of breakfast flair today!</p>
+            </div>
         </div>
-        <br>
-        <p id="description">All merchandise sold in stores only!</p>
-        <p id="description"> Visit one of our locations today.</p>
+
+        <div class="row">
+            <div class="col">
+                <h1 class="menu">Buy our Stuff! <i class="bi bi-cart"></i></h1>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <table class="table table-striped">
+                    <thead>
+                        <tr class="p-3 mb-2 bg-light text-dark">
+                            <th scope="col"><em>Item</em></th>
+                            <th scope="col"><em>Price</em></th>
+                            <th scope="col"><em>In Stock?</em></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="p-3 mb-2 bg-dark text-white">
+                            <th scope="row">Bacon Shirts</th>
+                            <td>$25</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr class="p-3 mb-2 bg-light text-dark">
+                            <th scope="row">Waffle Hats</th>
+                            <td>$30</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr class="p-3 mb-2 bg-dark text-white">
+                            <th scope="row">Toaster Oven</th>
+                            <td>$315</td>
+                            <td>No</td>
+                        </tr>
+                        <tr class="p-3 mb-2 bg-light text-dark">
+                            <th scope="row">Flap Jacks</th>
+                            <td>$5</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr class="p-3 mb-2 bg-dark text-white">
+                            <th scope="row">Skillet Snow Shoes</th>
+                            <td>$40</td>
+                            <td>No</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6" style="margin-top: 1em;">
+                <div class="card mx-auto" style="width: 19rem;">
+                    <img class="card-img-top"
+                        src="https://displaycentre.co.uk/wp-content/uploads/2016/10/clothing-store-984396_1920.jpg"
+                        alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Come to store</h5>
+                        <p class="card-text">All merchandise sold in stores only! Visit one of our locations today.</p>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                            class="btn btn-primary">Store Locations (Please Click)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6" style="margin-top: 1em;">
+
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                    crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                    crossorigin="anonymous"></script>
+
+
+                <div id="carouselExampleControls" class="carousel slide mx-auto" data-ride="carousel"
+                    style="width: 19rem;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100"
+                                src="https://media4.giphy.com/media/hQKiGV6MG8WmsHg2yx/200w.gif?cid=6c09b9520zedf8jwjn0wqf8zubg9m799hixkajrku7b9hy8q&ep=v1_gifs_search&rid=200w.gif&ct=gttps://media.tenor.com/4NWEXI8Fv9QAAAAd/mentos-grandma.gif"
+                                alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100"
+                                src="https://media4.giphy.com/media/W0J3eg1E5mTVUZA8Sy/200w.gif?cid=6c09b952ck4nok50f73diccvdw65bl6os0yihfru1psf9nee&ep=v1_gifs_search&rid=200w.gif&ct=g"
+                                alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100"
+                                src="https://media.tenor.com/SSY2V0RrU3IAAAAd/rick-roll-rick-rolled.gif"
+                                alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only text-dark">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only text-dark">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

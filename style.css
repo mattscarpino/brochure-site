@@ -2,7 +2,8 @@ header {
     background-color: #FC766A;
 }
 
-body {
+body,
+.body {
     background-color: #F1AC88;
     margin: 0;
 }
@@ -141,7 +142,7 @@ input[type=submit]:hover {
     color: white;
 }
 
-.container {
+.form-container {
     margin-left: 2em;
     margin-right: 2em;
     margin-bottom: 2em;
